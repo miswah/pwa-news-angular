@@ -1,0 +1,127 @@
+//Nav bar style
+.overlay {
+  font-family: "SF Pro Display", sans-serif;
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background: #1a4799;
+  opacity: 0.98;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 30px !important;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 30px;
+  right: 45px;
+  font-size: 30px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.heading {
+  margin-top: 44px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.intro {
+  margin-top: 20px;
+  background: #4c6faf;
+  border-radius: 12px;
+  padding: 10px;
+  max-width: 90%;
+  margin-left: 5%;
+
+  &__name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-top: 7px;
+    color: #ffffff;
+    overflow-wrap: break-word;
+  }
+
+  &__email {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+
+    letter-spacing: 0.01em;
+
+    color: #ffffff;
+    overflow-wrap: break-word;
+  }
+}
+
+.btn__switch {
+  border-radius: 7px;
+  background: red;
+  color: #fff;
+  width: 200px;
+  height: 60px;
+  margin-left: auto;
+}
+
+.items {
+  margin-top: 30px;
+  text-align: left;
+  margin-left: 5%;
+
+  a {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+
+.logout {
+  button {
+    background: red;
+    color: #fff;
+    position: absolute;
+    width: 112px;
+    height: 36px;
+    left: 23px;
+    bottom: 30px;
+    border-radius: 7px;
+  }
+}

@@ -1,0 +1,15 @@
+<p style="margin-bottom: 0">
+  <mat-toolbar color="primary" class="text-center">
+    <a [routerLink]="['../dashboard']">
+      <i class="bi bi-arrow-left"></i>
+    </a>
+    <span>Home</span>
+
+    <button type="button" mat-button (click)="navbarService.openNav()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </mat-toolbar>
+</p>
+
+<app-sidebar-menu></app-sidebar-menu>
+<app-news-layout></app-news-layout>
